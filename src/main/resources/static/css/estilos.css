@@ -1,6 +1,11 @@
-#contenedorTitulo{
+/*#contenedorTitulo{
     text-align: center;
     color: darkcyan;
+    border: 2px solid;
+    width: 50%;
+    height: 250px;
+    margin: 0 auto; Centrar un div
+    background-color: aliceblue;
 }
 
 .parrafoSecundario{
@@ -26,4 +31,123 @@ h2{
 }
 h3{
     font-size: 20px;
+}
+
+p span#textoimp{
+    color: blue;
+}
+
+a{
+    border: 6px solid brown;
+    background: blue;
+    color: whitesmoke;
+    border-radius: 25px;
+    padding: 5px;
+    margin: 7px;
+}
+
+a:link{
+    color: coral;
+    font-size: 20px;
+}
+
+a:visited{
+    color: deeppink;
+}
+
+a:hover{
+    background: green;
+    color: white;
+}
+
+a:active{
+    background: purple;
+    color: white;
+}
+
+p[name^='parr']{
+    color: blue;
+}*/
+
+#encabezado {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8%;
+    width: 100%;
+    background-color: #496D8D;
+    color: white;
+}
+
+#encabezado h1 {
+    display: inline;
+}
+
+#menu {
+    position: absolute;
+    top: 8%;
+    left: 0;
+    height: 4%;
+    width: 100%;
+    background-color: gainsboro;
+    color: black;
+}
+
+#menu a:visited {
+    color: navy;
+}
+
+#menu a:hover {
+    background-color: green;
+    color: white;
+}
+
+#barraLateral {
+    position: absolute;
+    top: 12%;
+    left: 0;
+    height: 81%;
+    width: 20%;
+    background-color: cornsilk;
+    color: black;
+}
+
+#contenido {
+    position: absolute;
+    top: 12%;
+    left: 20%;
+    height: 81%;
+    width: 80%;
+    background-color: #87f29b;
+    color: black;
+    overflow: auto;
+}
+
+#piePagina {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 7%;
+    width: 100%;
+    background-color: cadetblue;
+    color: black;
+    text-align: center;
+}
+
+#encabezadoTabla {
+    font-size: 20px;
+    color: white;
+    background-color: cadetblue;
+}
+
+#tablaResumen tr {
+    font-size: 25px;
+}
+
+#tablaResumen tr:nth-child(odd) {
+    background-color: gold;
+}
+
+#tablaResumen tr:nth-child(even) {
+    background-color: coral;
 }

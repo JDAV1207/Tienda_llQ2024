@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/estilos.css" rel="stylesheet"/>
+        <link href="css/menu.css" rel="stylesheet" type="text/css"/>
         <style>
             #h2{
                 color: azure
@@ -12,21 +13,106 @@
         </style>
     </head>
     <body>
-        <div id="contenedorTitulo">         
-            <h1 style="color: #00cc66">Home</h1>
-            <h2>Introduccion</h2>
-            <p>Bienvenidos a la pagina de la tienda en linea...</p>
-        </div>
+        <header class="header"> 
+            <!-- Etiqueta para ofrecerle al browser info de que es un encabezado -->
+            <nav class="nav"> 
+                <!-- esta etiqueta es para ilustrarle al browser que posiblemente es un menú -->
+                <a href="index.html" class="logo nav-link">TechShop</a>
+                <ul class="nav-menu">
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="ejemplo9.html">&LeftTriangleBar;</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="ejemplo2.html">&RightTriangleBar;</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="audios.html">Audios</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="videos.html">Videos</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="iframe.html">Iframe</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="formulario.html">Formulario</a></li>
+                </ul>
+            </nav>
+        </header>
 
-        <p class="parrafoSecundario notaImportante" style="text-align: left;">Lorem ipsum dolor sit amet consectetur adipiscing elit, est pellentesque facilisis risus porta. Primis hac sapien consequat lacus arcu posuere pulvinar condimentum, sollicitudin hendrerit mollis facilisi dictum varius interdum sodales, tristique malesuada convallis nisi scelerisque tellus iaculis. Porttitor aliquam lacus etiam maecenas class senectus, felis ultricies varius nam ligula mollis, interdum nostra dictum magna a. Mus odio erat a nunc natoque rhoncus nisl lectus lobortis ad, nibh faucibus bibendum facilisis habitasse lacus id montes senectus, hac sagittis aptent molestie ut dis porta aenean est.</p> 
-        <p class="parrafoSecundario" style="text-align: center;">Natoque at egestas ullamcorper laoreet taciti pellentesque feugiat maecenas urna nostra vitae sem, neque mattis augue netus fames ultricies purus gravida sodales consequat. Suspendisse elementum purus vestibulum ullamcorper donec diam auctor imperdiet placerat penatibus, lectus himenaeos justo fermentum dui montes iaculis torquent aenean. Penatibus porttitor parturient justo praesent natoque dignissim faucibus pharetra vulputate metus, taciti magnis scelerisque viverra pulvinar malesuada leo molestie vestibulum, tristique eleifend vel posuere ante lobortis non vitae nunc. Habitasse neque nisi iaculis ligula vivamus quam sociis taciti risus praesent porta congue viverra, dictumst magna mi vehicula sed curabitur scelerisque augue senectus mattis malesuada volutpat.</p> 
-        <p class="parrafoSecundario" style="text-align: right;">Dis hac accumsan massa vitae nascetur consequat interdum dapibus integer netus, ac eros libero quam pulvinar scelerisque nisi ante torquent. Mattis scelerisque enim tortor molestie placerat pellentesque sollicitudin, varius eget sed cubilia ut velit semper, volutpat dictum inceptos rutrum laoreet potenti. Quis senectus dis cursus potenti felis, nisi primis augue rhoncus hac, inceptos in eu duis. Diam placerat tincidunt augue ligula hendrerit cum nostra, eros nunc metus dui ante quisque tristique, mus tempus sodales sociosqu leo vestibulum.</p>
+        <aside id="barraLateral">
+            <h2>Productos más vendidos</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </aside>
 
-        <!-- Saltos de Linea forzados -->
-        <br>
-        <br>
-        <br>
-        <p class="notaImportante">Ultima Linea</p>
+        <section id="contenido">
+            <h2>Articulos principales</h2>
+            <br>
+            <article>
+                <header>Asus Vivobook</header>
+                <p class="descripcion">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <figure>
+                    <img src="https://dlcdnwebimgs.asus.com/gain/dcfda3d9-8130-4cf0-886f-84554d80cb5d/w800" width="200" />
+                    <figcaption>Imagen con fines ilustrativos</figcaption>
+                </figure>
+            </article>
+            <article>
+                <header>Alienware ATD 900</header>
+                <p class="descripcion">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <figure>
+                    <img src="https://www.huramobil.cz/fotocache/mid/ATD-M-AW3423DWF.jpg" width="200" />
+                    <figcaption>Más vendido</figcaption>
+                </figure>
+            </article>
+            <article>
+                <header>Impresora 3D</header>
+                <p class="descripcion">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <figure>
+                    <img src="https://m.media-amazon.com/images/I/71hnkA62lJL._AC_SL1500_.jpg" width="200" />
+                    <figcaption>Más económico</figcaption>
+                </figure>
+            </article>
+            <br>
+            <article>
+                <h2>Líneas de producto</h2>
+                <table border="0" style="border-collapse: collapse;">
+                    <thead id="encabezadoTabla">
+                        <tr>
+                            <th>Código</th>
+                            <th>Descripción</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tablaResumen">
+                        <tr>
+                            <td>1</td>
+                            <td>Teclados</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Monitores</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Headsets</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Baterías</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Cargadores</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Portátiles</td>
+                        </tr>
+                    </tbody>
+                </table>
 
+            </article>
+        </section>
+        <footer id="piePagina">
+            Derechos Reservados &COPY; 2024
+            <address style="display: inline;">San José</address> 
+            <address style="display: inline;">Tel 8888-7788</address>
+        </footer>
     </body>
 </html>
