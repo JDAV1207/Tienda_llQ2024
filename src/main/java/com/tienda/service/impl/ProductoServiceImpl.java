@@ -59,4 +59,9 @@ public class ProductoServiceImpl implements ProductoService {
     public List<Producto> metodoNativo(double precioInf, double precioSup) {
         return productoDao.metodoNativo(precioInf, precioSup);
     }
+
+    @Override
+    public List<Producto> findByDescripcionContainingIgnoreCase(String texto) {
+        return productoDao.findByDescripcionContainingIgnoreCase(texto);
+    }
 }
