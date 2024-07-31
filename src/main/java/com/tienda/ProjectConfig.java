@@ -98,7 +98,7 @@ public class ProjectConfig implements WebMvcConfigurer {
                 .logout((logout) -> logout.permitAll());
         return http.build();
     }
-    
+
     @Autowired
     private UserDetailsService userDetailsService;
 
@@ -128,5 +128,4 @@ public class ProjectConfig implements WebMvcConfigurer {
 //                .build();
 //        return new InMemoryUserDetailsManager(user, sales, admin);
 //    }
-
 }
